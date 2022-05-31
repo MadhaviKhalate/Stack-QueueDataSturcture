@@ -6,28 +6,36 @@ namespace Stack_Queue
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("1.Creating Stack \n2.Peak and Pop Element");
+            Console.WriteLine("1.Creating Stack \n2.Peak and Pop Element \n3.Insert Elements in Queue" +
+                "\n4.Delete Elements from queue");
             Console.WriteLine("Enter your option:");
             int option = Convert.ToInt32(Console.ReadLine());
-            StackAndQueue stack = new StackAndQueue();
+            StackAndQueue stackQueue = new StackAndQueue();
             switch (option)
             {
                 case 1:
-                    stack.PushElements(70);
-                    stack.PushElements(30);
-                    stack.PushElements(56);
-                    stack.DisplayElements();
+                    stackQueue.PushElements(70);
+                    stackQueue.PushElements(30);
+                    stackQueue.PushElements(56);
+                    stackQueue.DisplayElements();
                     break;
 
                 case 2:
-                    stack.PushElements(70);
-                    stack.PushElements(30);
-                    stack.PushElements(56);
-                    stack.DisplayElements();
-                    stack.PeakElement();
-                    stack.PopElement();
-                    stack.IsEmpty();
-                    stack.DisplayElements();
+                    stackQueue.PushElements(70);
+                    stackQueue.PushElements(30);
+                    stackQueue.PushElements(56);
+                    stackQueue.DisplayElements();
+                    stackQueue.PeakElement();
+                    stackQueue.PopElement();
+                    stackQueue.IsEmpty();
+                    stackQueue.DisplayElements();
+                    break;
+
+                case 3:
+                    stackQueue.CreateQueue(56);
+                    stackQueue.CreateQueue(30);
+                    stackQueue.CreateQueue(70);
+                    stackQueue.DisplayQueueElements();
                     break;
 
                 default:
