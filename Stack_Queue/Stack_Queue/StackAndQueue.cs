@@ -102,5 +102,19 @@ namespace Stack_Queue
                 temp = temp.next;
             }
         }
+
+        public void DeleteQueueElements()
+        {
+            Console.WriteLine();
+            if (this.head == null)
+            {
+                Console.WriteLine("Queue is Empty");
+            }
+            while (this.head != null)
+            {
+                Console.WriteLine("{0} is deleted from Queue", head.data);
+                head = head.next;
+            }
+        }
     }
 }

@@ -38,6 +38,15 @@ namespace Stack_Queue
                     stackQueue.DisplayQueueElements();
                     break;
 
+                case 4:
+                    stackQueue.CreateQueue(56);
+                    stackQueue.CreateQueue(30);
+                    stackQueue.CreateQueue(70);
+                    stackQueue.DisplayQueueElements();
+                    stackQueue.DeleteQueueElements();
+                    stackQueue.DisplayQueueElements();
+                    break;
+
                 default:
 
                     break;
